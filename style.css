@@ -1,0 +1,19 @@
+*{
+    background-color: #111C24;
+}
+
+.container{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+ul {
+    list-style: none; 
+    font-family: 'museo-sans', sans-serif; font-weight: 300; 
+    color: #FBF9ED; 
+    display: inline; display: flex; 
+    margin-right: 50px;
+}
