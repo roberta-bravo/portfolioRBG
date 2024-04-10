@@ -2,18 +2,39 @@
     background-color: #111C24;
 }
 
-.container{
-    height: 10%;
+header {
+    height: 15%;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: right;
 }
 
-ul {
+.logo img {
+    margin-right: 700px;
+    width: 70px;
+    height: auto;
+}
+
+nav ul {
     list-style: none; 
     font-family: 'museo-sans', sans-serif; font-weight: 300; 
-    color: #FBF9ED; 
-    display: inline; display: flex; 
-    margin-right: 50px;
+    margin-right: 15px;
+    justify-content: right;
+    
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 50px;}
+
+
+nav ul li a {
+    color: #FBF9ED;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #5A87DC;
 }
