@@ -2,31 +2,41 @@
     background-color: #111C24;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 header {
-    height: 15%;
+    height: 3em;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: right;
+    box-shadow: 0 1em 1.5em rgba(0, 0, 0, 0.1);
 }
 
 .logo img {
-    margin-right: 700px;
+    margin-right: 35em;
     width: 70px;
     height: auto;
+}
+
+.logo img:hover {
+    src: url(./IMAGES/Torodrilo-Cream.png);
+    transform: scale(110%);
+    transition: 0.3 ease;
 }
 
 nav ul {
     list-style: none; 
     font-family: 'museo-sans', sans-serif; font-weight: 300; 
-    margin-right: 15px;
     justify-content: right;
     
 }
 
 nav ul li {
     display: inline;
-    margin-right: 50px;}
+    margin-right: 3em;}
 
 
 nav ul li a {
@@ -37,4 +47,50 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #5A87DC;
+}
+
+footer {
+    height: 3em;
+    width: 100%;
+    display: flex; 
+    align-items:center;
+    justify-content:center;
+    font-family: 'museo-sans', sans-serif; font-weight: 300; font-size: 10pt;
+    left: 0;
+    bottom: 0;
+    padding: 0;
+}
+
+footer a {
+    background-color: transparent;
+    color: #FBF9ED;
+}
+
+footer div{
+    padding-left: 18em;
+    background-color: transparent;
+}
+
+footer div a{
+    padding-left: 1.5em;
+}
+
+footer div a img:hover{
+    scale: 110%;
+}
+
+.socialmedia img{
+    width: 1.55em;
+    height: auto;
+    background-color: transparent;
+}
+
+#back-to-top {
+    text-decoration: none;
+    transition: color 0.3 ease;
+    padding-right: 18em;
+}
+
+#back-to-top:hover {
+    color: #E5FF39;
 }
