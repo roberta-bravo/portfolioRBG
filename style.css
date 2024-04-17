@@ -21,14 +21,15 @@ header {
     box-shadow: 0.1em 1.5em rgba(0, 0, 0, 0.1);
 }
 
-.logo img {
+.logo svg{
+    fill: #E5FF39;
     margin-right: 35em;
     width: 70px;
     height: auto;
 }
 
-.logo img:hover {
-    src: url(./IMAGES/Torodrilo-Cream.png);
+.logo svg:hover {
+    fill: #5A87DC; 
     transform: scale(110%);
     transition: 0.3 ease;
 }
