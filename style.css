@@ -23,14 +23,13 @@ header {
 
 .logo svg{
     fill: #E5FF39;
-    margin-right: 35em;
+    padding-right: 55em;
     width: 70px;
     height: auto;
 }
 
 .logo svg:hover {
     fill: #5A87DC; 
-    transform: scale(110%);
     transition: 0.3 ease;
 }
 
@@ -120,10 +119,15 @@ footer div a img:hover{
     scale: 110%;
 }
 
-.socialmedia img{
+.socialmedia svg{
     width: 1.55em;
-    height: auto;
+    height: 1.55em;
     background-color: transparent;
+    fill: #FBF9ED;
+}
+
+.socialmedia svg:hover{
+    fill: #E5FF39;
 }
 
 #back-to-top {
