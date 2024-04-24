@@ -81,12 +81,31 @@ nav ul li a:hover {
 
 /* Para contenido sobre el video de fondo */
 .video-section-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
     text-align: center;
+}
+
+.video-section-content img{
+    background-color: transparent;
+    width: 30em;
+    position: absolute;
+    top: 20em;
+    left: 50em; 
+}
+
+.video-section-content svg{
+    background-color: transparent;
+    fill: #E5FF39;
+    width: 20em;
+    position: absolute;
+    top: 38em;
+    left: 42em; 
+}
+
+.video-section-content svg:hover{
+    background-color: transparent;
+    fill:#FBF9ED
 }
 
 footer {
