@@ -1,0 +1,133 @@
+*{
+    background-color: #111C24;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body, html{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+  font-family: ManoNegra;
+  src: url(./FONTS/WCManoNegraBta.otf);}
+
+@font-face {
+  font-family: ManoNegraBold;
+  src: url(./FONTS/WCManoNegraBoldBta.otf);}
+
+
+/* ABOUT US TAB */
+.aboutvideo-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.aboutvideo iframe{
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+/* WORK TAB */
+.workhome-overlay{
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #5A87DC; opacity: 70%;
+}
+
+.workhome-section-content {
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+}
+
+.workhome-section-content img{
+    background-color: transparent;
+    width: 30em;
+    position: absolute;
+    top: 20em;
+    left: 50em; 
+}
+
+.workhome-section-content svg{
+    background-color: transparent;
+    fill:#111C24;
+    width: 20em;
+    position: absolute;
+    top: 38em;
+    left: 42em; 
+}
+
+.workhome-section-content svg:hover {
+    background-color: transparent;
+    fill:#E5FF39;
+    transition: 0.3 ease;
+}
+
+/* FOOTER */
+.footer {
+    height: 6vh;
+    width: 100vw;
+    display: flex; 
+    align-items:center;
+    justify-content:center;
+    align-content: space-evenly;
+    z-index: 1000;
+    position: absolute;
+    left: 0;
+    align-self: baseline;
+}
+
+
+footer a {
+    background-color: transparent;
+    color: #FBF9ED;
+    font-family: 'museo-sans', sans-serif; font-weight: 300; font-size: 10pt;
+    text-align: center;
+}
+
+footer div{
+    padding-left: 18vw;
+    background-color: transparent;
+    display: inline-flex;
+    align-items: center;
+}
+
+footer div a{
+    padding-left: 1.5vw;
+}
+
+footer div a img:hover{
+    scale: 110%;
+}
+
+.socialmedia svg{
+    width: 1.55em;
+    height: 1.55em;
+    background-color: transparent;
+    fill: #FBF9ED;
+}
+
+.socialmedia svg:hover{
+    fill: #E5FF39;
+}
+
+#back-to-top {
+    text-decoration: none;
+    transition: color 0.3 ease;
+    padding-right: 10vw;
+}
+
+#back-to-top:hover {
+    color: #E5FF39;
+}

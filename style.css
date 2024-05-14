@@ -374,6 +374,7 @@ input[type="radio"] {
   background-color: #E5FF39;
   z-index: 80; 
   height: 100vh;
+  overflow: hidden;
 }
 
 .container4 p{
@@ -406,9 +407,9 @@ input[type="radio"] {
 }
 
 /* FOOTER */
-.footer {
-    height: 5vh;
-    width: 100%;
+.footerindex {
+    height: 6vh;
+    width: 100vw;
     display: flex; 
     align-items:center;
     justify-content:center;
@@ -416,7 +417,7 @@ input[type="radio"] {
     z-index: 1000;
     position: absolute;
     left: 0;
-    bottom: 0;
+    top: 518vh;
 }
 
 
@@ -462,5 +463,4 @@ footer div a img:hover{
 #back-to-top:hover {
     color: #E5FF39;
 }
-
 
