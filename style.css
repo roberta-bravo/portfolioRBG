@@ -290,10 +290,11 @@ h3 {
 
 .carousel-container{
     background-color: transparent;
-    text-align: center;
-    left: 30vw;
+    /*text-align: center;
+    left: 0;
     position: absolute;
-    top: 10vh;
+    top: 10vh;*/
+    position: relative;
 }
 
 .carousel{
@@ -301,7 +302,10 @@ h3 {
     overflow: hidden;
     background-color: transparent;
     width: 50%;
-    position: relative;
+    /*position: relative;
+    left: 50%;
+    transform: translateX(-50%);*/
+    margin: 0 auto;
 }
 
 .service{
@@ -325,27 +329,26 @@ h3 {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  cursor: pointer;
 }
 
 .arrow-left {  
-  left: -5vw;
+  left: 20vw;
   background-color: transparent;
 }
 
 .arrow-right {
-  right: 29vw;
+  right: 20vw;
   background-color: transparent;
 }
 
 .arrow label{
     background-color: transparent;
+    cursor: pointer;
 }
 
 .arrow svg{
   background-color: transparent;
   fill: #111C24;
-  cursor: pointer;
 }
 
 .arrow svg:hover {
@@ -360,7 +363,7 @@ input[type="radio"] {
 #slide1:checked ~ .carousel .slide1,
 #slide2:checked ~ .carousel .slide2,  
 #slide3:checked ~ .carousel .slide3{
-    display: block;
+    display: flex;
 }
 
 
@@ -404,17 +407,18 @@ input[type="radio"] {
 
 /* FOOTER */
 .footer {
-    height: 4vh;
+    height: 5vh;
     width: 100%;
     display: flex; 
     align-items:center;
     justify-content:center;
+    align-content: space-evenly;
+    z-index: 1000;
+    position: absolute;
     left: 0;
     bottom: 0;
-    align-content: space-evenly;
-    z-index: 90;
-    position: fixed;
 }
+
 
 footer a {
     background-color: transparent;
