@@ -11,6 +11,7 @@ body, html{
     padding: 0;
 }
 
+/* HEADER*/
 header {
     height: 3em;
     width: 100%;
@@ -54,8 +55,11 @@ nav ul li a {
 nav ul li a:hover {
     color: #5A87DC;
 }
+/* TERMINA HEADER */
 
 
+
+/*LANDING PAGE VIDEO*/
 .homevideo-section {
     position: relative;
     width: 100%;
@@ -108,12 +112,12 @@ nav ul li a:hover {
     fill:#5A87DC
 }
 
-/* Aquí empieza Biriloke */
+/* SCREEN INFO */
 .info-container{
     display: flex;
     background-color: #E5FF39;
     padding-top: 5vh; margin: 0;
-    position: -webkit-sticky; /* Safari */
+    position: -webkit-sticky; 
     /*position: sticky;*/
     top: 0;
     /*z-index: 100;*/
@@ -134,10 +138,9 @@ nav ul li a:hover {
   background: transparent;
 }
 
-.collage2 {
+.collage {
   background: transparent;
 }
-
 
 .item {
   overflow: hidden;
@@ -154,12 +157,10 @@ nav ul li a:hover {
   z-index: 2;
   grid-area: 1/1/8/10;
 }
-
 .item2 {
   z-index: 3;
   grid-area: 3/8/13/-1;
 }
-
 .item3 {
   z-index: 4;
   grid-area: 11/2/16/12;
@@ -174,6 +175,71 @@ nav ul li a:hover {
   transform: scale(110%);
 }
 
+.side-text {
+    width: 50%;
+    background-color: transparent;
+    justify-content: center;
+    text-align: center;
+    font-family: 'museo-sans', sans-serif; font-weight: 300;
+    padding-top: 25vh;
+}
+
+.side-text p {
+    background-color: transparent;
+    justify-content: center;
+    text-align: center;
+    color: #111C24;
+    padding-left: 8vw; padding-right: 8vw;
+}
+
+.torodrilo-welcome {
+background-color: transparent;
+fill:#5A87DC;
+padding-bottom: -2vh;
+}
+
+.AboutUs-Button {
+    display: inline-flex;
+    position: relative;
+    vertical-align: middle;
+    align-content: center;
+    background-color: transparent;
+    fill: #111C24;
+    transition: fill-color 0.3s ease;
+    padding-top: 5vh;
+}
+
+.AboutUs-Button svg {
+    display: inline-flex;
+    background-color: transparent;
+    vertical-align: middle;
+}
+
+.AboutUs-Button svg text{
+    font-family: 'museo-sans', sans-serif; font-weight: 400; 
+    font-size: 7vw;
+    fill:#FBF9ED;
+}
+
+.AboutUs-Button svg text:hover{
+    fill:#FBF9ED;
+}
+
+.AboutUs-Button :hover {
+    fill: #5A87DC;
+}
+
+.AboutUs-Button :active {
+    fill:#FBF9ED;
+}
+
+.TextOnTop-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 /*.container2 {
   position: sticky; /* or absolute, depending on your layout */
   /* top: 100px;  Adjust as needed to ensure it appears below container1 */
@@ -183,7 +249,7 @@ nav ul li a:hover {
 }
 */
 
-/* Aquí empieza Footer */
+/* FOOTER */
 .footer {
     height: 3em;
     width: 100%;
