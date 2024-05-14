@@ -11,6 +11,14 @@ body, html{
     padding: 0;
 }
 
+@font-face {
+  font-family: ManoNegra;
+  src: url(./FONTS/WCManoNegraBta.otf);}
+
+@font-face {
+  font-family: ManoNegraBold;
+  src: url(./FONTS/WCManoNegraBoldBta.otf);}
+
 /* HEADER*/
 header {
     height: 3em;
@@ -65,14 +73,16 @@ nav ul li a:hover {
     width: 100%;
     height: 100vh;
     overflow: hidden;
+    box-shadow: #111C24 30px 10px 5px 10px;
 }
 
 .homevideo{
     position: absolute;
     top: 0; left: 0;
     width: 100%;
-    height: 95%;
+    height: 100vh;
     object-fit: cover;
+    box-shadow: #111C24 30px 10px 5px 10px;
 }
 
 .homevideo-overlay{
@@ -81,6 +91,7 @@ nav ul li a:hover {
     width: 100%;
     height: 100%;
     background-color: #111C24; opacity: 70%;
+    box-shadow: #111C24 30px 10px 5px 10px;
 }
 
 /* Para contenido sobre el video de fondo */
@@ -112,15 +123,17 @@ nav ul li a:hover {
     fill:#5A87DC
 }
 
+
 /* SCREEN INFO */
+/* GRID */
 .info-container{
     display: flex;
     background-color: #E5FF39;
     padding-top: 5vh; margin: 0;
     position: -webkit-sticky; 
-    /*position: sticky;*/
+    position: sticky;
     top: 0;
-    /*z-index: 100;*/
+    z-index: 10;
 }
 
 .container {
@@ -154,15 +167,15 @@ nav ul li a:hover {
 }
 
 .item1 {
-  z-index: 2;
+  z-index: 48;
   grid-area: 1/1/8/10;
 }
 .item2 {
-  z-index: 3;
+  z-index: 49;
   grid-area: 3/8/13/-1;
 }
 .item3 {
-  z-index: 4;
+  z-index: 50;
   grid-area: 11/2/16/12;
 }
 
@@ -175,6 +188,7 @@ nav ul li a:hover {
   transform: scale(110%);
 }
 
+/* SIDE TEXT */
 .side-text {
     width: 50%;
     background-color: transparent;
@@ -216,8 +230,8 @@ padding-bottom: -2vh;
 }
 
 .AboutUs-Button svg text{
-    font-family: 'museo-sans', sans-serif; font-weight: 400; 
-    font-size: 7vw;
+    font-family: 'ManoNegra'; 
+    font-size: 9vw;
     fill:#FBF9ED;
 }
 
@@ -233,25 +247,61 @@ padding-bottom: -2vh;
     fill:#FBF9ED;
 }
 
-.TextOnTop-button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+
+.container2 {
+  position: sticky; 
+  top: 0;  
+  background-color: #111C24;
+  z-index: 60; 
+  height: 100vh;
+  justify-content: center;
+  text-align: center;
 }
 
-/*.container2 {
-  position: sticky; /* or absolute, depending on your layout */
-  /* top: 100px;  Adjust as needed to ensure it appears below container1 */
-  /*background-color: #fffff;/* Adjust as needed */
-  /* z-index: 50; /* Lower than the z-index of container1 */
-  /*height: 1080px;
+h3 {
+    background-color: transparent;
+  font-family: 'ManoNegraBold'; font-size: 500%; line-height: 1;
+  color: #FBF9ED;
+  padding-top: 40vh;  
+  margin-bottom: 3vh;
 }
-*/
+
+.container2 svg{
+    fill: #FBF9ED;
+}
+.container2 svg:hover{
+    fill: #E5FF39;
+}
+
+.container3 {
+  position: sticky; 
+  top: 0;  
+  background-color:#5A87DC;
+  z-index: 70; 
+  height: 100vh;
+}
+
+.container4 {
+  position: sticky; 
+  top: 0;  
+  background-color: #E5FF39;
+  z-index: 80; 
+  height: 100vh;
+}
+
+.container4 p{
+    text-align: right;
+    margin-right: 10vw;
+    margin-left: 40vw;
+    padding-top: 40vh;
+    background-color: transparent;
+    font-family: 'ManoNegraBold'; font-size: 280%; line-height: 1;
+    color: #111C24;
+}
 
 /* FOOTER */
 .footer {
-    height: 3em;
+    height: 4vh;
     width: 100%;
     display: flex; 
     align-items:center;
@@ -259,7 +309,8 @@ padding-bottom: -2vh;
     left: 0;
     bottom: 0;
     align-content: space-evenly;
-    /*z-index: 1;*/
+    z-index: 90;
+    position: fixed;
 }
 
 footer a {
