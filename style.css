@@ -264,6 +264,15 @@ h3 {
   margin-bottom: 3vh;
 }
 
+.container2 p{
+    padding-top: 40vh;  
+    background-color: transparent;
+  font-family: 'Museo Sans', sans-serif; font-weight: 500%; line-height: 1;
+  color: #E5FF39;
+  justify-content: center;
+  text-align: center;
+}
+
 .container2 svg{
     fill: #FBF9ED;
 }
