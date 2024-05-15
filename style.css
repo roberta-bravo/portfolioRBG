@@ -141,6 +141,7 @@ nav ul li a:hover {
   display: flex;
   width: 50%;
   height: 100vh;
+  background: transparent;
 }
 
 .grid-container {
@@ -149,10 +150,6 @@ nav ul li a:hover {
   display: grid;
   grid-template-columns: repeat(16, 1fr);
   grid-template-rows: repeat(16, 1fr);
-  background: transparent;
-}
-
-.collage {
   background: transparent;
 }
 
